@@ -33,4 +33,8 @@ Starting 25 Aug 2025 — my path to Generative AI Engineer.
 \- \[ ] W\&B/MLflow connected
 
 
+<!-- For activate the python environment in powershell
+.\.venv\Scripts\activate -->
+
+
 
