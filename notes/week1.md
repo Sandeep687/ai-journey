@@ -22,3 +22,6 @@ docker exec -it <container_id> bash   # get inside a running container
 docker stop <id>               # stop container
 docker rm <id>                 # remove container
 docker rmi <id>        
+
+
+docker run -it -p 8888:8888 -v ${PWD}:/app ai-pytorch

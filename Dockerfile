@@ -4,8 +4,14 @@ FROM python:3.10-slim
 # Set working directory inside container
 WORKDIR /app
 
-# Install Jupyter
-RUN pip install jupyter
+# install basic dependencies
+RUN pip install --upgrade pip
+
+# install jupyter + pytorch (cpu version)
+RUN pip install jupyter torch torchvision torchaudio
+
+# expose port for jupyter
+EXPOSE 8888
 
 # Copy everything into container
 COPY . .
